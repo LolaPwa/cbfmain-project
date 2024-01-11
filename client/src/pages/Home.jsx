@@ -70,7 +70,7 @@ export default function Home() {
       to={'/search'}
       className='text-xs sm:text-sm text-green-800 font-bold hover:underline'
       >
-        Click here to secure or search for properties.
+        Click here to secure and or search for properties.
       </Link>
 </div>
 {/*swiper*/}
