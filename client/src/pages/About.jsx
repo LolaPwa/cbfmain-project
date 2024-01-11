@@ -12,8 +12,8 @@ export default function About() {
         Our mission is to help our long standing property companies and individual clients achieve
         a lasting solution to the problems created by empty properties.
       </p>
-      <p className='mb-4 text-slate-700'> Our expert team bring a wealth of knowledge and expertise
-      from the provision of a free survey within 24 hours to letting or selling your property in a short space 
+      <p className='mb-4 text-slate-700'> Our masterly team bring a wealth of knowledge and expertise;
+      from the provision of free surveys within 24 hours to letting or selling your property in a short space 
       of time.</p>
     </div>
   )
