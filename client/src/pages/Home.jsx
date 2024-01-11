@@ -63,7 +63,7 @@ export default function Home() {
           affordable accommodation for those most in need, then LolaEstates is the right place to begin.
           
           <br />
-          Are you looking for temporary accommodation at a discount then we have a wide range of luxury 
+          Are you looking for temporary accommodation at a discount, then we have a wide range of luxury 
           properties to select from.  
       </div>
       <Link
