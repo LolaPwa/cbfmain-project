@@ -21,7 +21,7 @@ A css framework mainly for designing and styling the front-end web pages.
 # react dom
 An entry point to work in React applications with the DOM (document object model).
 # react-router-dom: 
-enables frontend navigation within the app by providing DOM bindings for react router.
+- enables frontend navigation within the app by providing DOM bindings for react router.
 # react-router:
 provides a collection of routing components and functions for React apps.
 # swiper:
@@ -34,13 +34,17 @@ Vite is a build tool used together with React, for optimised development and ser
 # JSON Web Tokens (JWT)
 - Used to implement email and password authentication for secure user access, including secure account deletion using JWT cookie validation.
 # GoogleAuth (Firebase)
-- A third party API for the enablement of a seamless login experience via the user email address.Firebase authentication supportsGoogle sign-In to authenticate users in this firbase powered app.
+- A third party API for the enablement of a seamless login experience via the user email address.Firebase authentication supports Google sign-In to authenticate users in this firbase powered app.
+# Cookie-parser
+- Used as middleware in the express framework so route handlers can access cookies which are small pieces of data sent to the client browser from the server. Cookie-parser is used for session management, user authentication and user behaviour.
 # MongoDB
-- provides a flexible and scalable approach to data storage with no strict requirements for the structure of socuments with a collection.
+- provides a flexible and scalable approach to data storage with no strict requirements for the structure of documents with a collection.
 # Redux Toolkit
 - For dynamic routing redux is a set of tools and utilities that simplifies the process of state management.
 # Firebase
 - Provides effcient handling and storage of images,so that users can upload and manage property images.
+# react-icons
+-  a react library used to access icons for the frontend
 
 ## To get started
 
@@ -52,10 +56,14 @@ Vite is a build tool used together with React, for optimised development and ser
 The website should then be accessible at http://localhost:3000
 
 # Live demo
-can be accessed at https://lola-estates.onrender.com
+Can be accessed at https://lola-estates.onrender.com
 
-## Software design
-# User journey
+
+## User journey
+The user journey details and frontend design details can be accessed from the design folder. 
 
 ## Resources referenced
+
+https://www.tutorialspoint.com/full-stack-mern-real-estate-app-a-modern-mern-marketplace/index.asp
+
 
