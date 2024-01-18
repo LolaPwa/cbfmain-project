@@ -1,8 +1,8 @@
 ## PROPERTY LISTING APP USING THE MERN STACK
 
-LolaEstates is a MERN stack web app built using Vite as the bundler, providing several functionalities for both property owners to add 
+LolaEstates is a MERN stack web app project built using Vite as the bundler, providing several functionalities for both property owners to add 
 their owned empty properties to be accessed by those seeking a new place to live.For a seamless user experience the app utilizes react-dom,
-react-icons, swiper, teilwind css and react-router-dom.
+react-icons, swiper, tailwind css and react-router-dom.
 
 ## FUNCTIONALITIES
 The app provides the following functionalities:
@@ -44,7 +44,7 @@ Vite is a build tool used together with React, for optimised development and ser
 # Firebase
 - Provides effcient handling and storage of images,so that users can upload and manage property images.
 # react-icons
--  a react library used to access icons for the frontend
+-  a react library used to access customisable icon components for the frontend; the Font Awesome icon library can be accessed through react-icons.
 
 ## To get started
 
@@ -61,9 +61,14 @@ Can be accessed at https://lola-estates.onrender.com
 
 ## User journey
 The user journey details and frontend design details can be accessed from the design folder. 
-
+https://github.com/LolaPwa/cbfmain-project
 ## Resources referenced
 
 https://www.tutorialspoint.com/full-stack-mern-real-estate-app-a-modern-mern-marketplace/index.asp
 
+https://www.geeksforgeeks.org/express-cookie-parser-signed-and-unsigned-cookies/
 
+https://chartai.io/
+https://app.visily.ai
+https://console.firebase.google.com
+https://render.com/
