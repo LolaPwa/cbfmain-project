@@ -80,8 +80,8 @@ export default function CreateListing(){
    const storeImage = async (file) => {
     return new Promise((resolve, reject) => {
         const storage = getStorage(app);
-        const filename = new Date().getTime() + file.name;
-        const storageRef = ref(storage, filename);
+        const fileName = new Date().getTime() + file.name;
+        const storageRef = ref(storage, fileName);
         const uploadTask = uploadBytesResumable(storageRef, file);
         uploadTask.on(
             'state_changed',
@@ -129,9 +129,9 @@ export default function CreateListing(){
         }
 
         if (
-            e.target.id === 'number' ||
-            e.target.id === 'text' ||
-            e.target.id === 'textarea'
+            e.target.type === 'number' ||
+            e.target.type === 'text' ||
+            e.target.type === 'textarea'
         ) {
             setFormData({
                 ...formData,
@@ -166,7 +166,7 @@ export default function CreateListing(){
         }
         navigate(`/listing/${data._id}`);
         } catch (error) {
-        setError(data.message);
+        setError(error.message);
         setLoading(false);
         }
     };
@@ -345,7 +345,7 @@ export default function CreateListing(){
                  type = "button"
                  disabled={uploading}
                  onClick={handleImageSubmit} 
-                 className="p-3 text-green-700 border border-green-700 first-letter:rounded uppercase hovershadow-lg disabled:opacity-80"
+                 className="p-3 text-green-700 border border-green-700 first-letter:rounded uppercase hover:shadow-lg disabled:opacity-80"
                  >
                     {uploading ? 'uploading...' : 'upload'}
                 </button>
