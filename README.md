@@ -75,12 +75,10 @@ The user journey details and frontend design details can be accessed from the de
 1. Created using https://github.com/LolaPwa/mern-estatecbfxxx
 2. Project was then moved to https://github.com/LolaPwa/cbfmain-project
 ## Resources referenced
+1. https://www.tutorialspoint.com/full-stack-mern-real-estate-app-a-modern-mern-marketplace/index.asp
 
-https://www.tutorialspoint.com/full-stack-mern-real-estate-app-a-modern-mern-marketplace/index.asp
-
-https://www.geeksforgeeks.org/express-cookie-parser-signed-and-unsigned-cookies/
-
-https://chartai.io/
-https://app.visily.ai
-https://console.firebase.google.com
-https://render.com/
+2. https://www.geeksforgeeks.org/express-cookie-parser-signed-and-unsigned-cookies/
+3. https://chartai.io/
+4. https://app.visily.ai
+5. https://console.firebase.google.com
+6. https://render.com/
