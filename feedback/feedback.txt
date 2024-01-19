@@ -4,4 +4,5 @@ The following feedback was obtain from some mentors on the 19th of January,
 1 -  Improve the delete operation by including a modal which will ask the user if they really 
 wanted to delete a listing.
 2 - Provide Admin functionality to add or edit listings
-3- Provide validation function to verify user whether an email address is valid.
+3 - Provide validation function to verify user whether an email address is valid.
+4 - Correct error in update listing.
