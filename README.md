@@ -8,12 +8,12 @@ react-icons, swiper, tailwind css and react-router-dom.
 The app provides the following functionalities:
 - The ability to create property listings
 - To contact the property owners
-- to up date property information.
-- view all listings.
-- to delete property listings
-- to search for properties listed
-- to log in using google authentication
-- to sign in and sign up and sign out from an account
+- To up date property information.
+- View all listings.
+- To delete property listings
+- To search for properties listed
+- To log in using google authentication
+- To sign in and sign up and sign out from an account
 
 ## Libraries and tools used
 # Tailwind CSS: 
@@ -47,7 +47,6 @@ Vite is a build tool used together with React, for optimised development and ser
 -  a react library used to access customisable icon components for the frontend; the Font Awesome icon library can be accessed through react-icons.
 
 ## To get started
-
 1. On a local machine first clone the repository from GitHub: 
 2. Next point to the root directory 
 3. Then install dependencies using npm (Node Package Manager): git npm install ..
