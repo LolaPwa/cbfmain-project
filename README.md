@@ -15,8 +15,8 @@ The app provides the following functionalities:
 - To log in using google authentication
 - To sign in and sign up and sign out from an account
 
-## Libraries and tools used
-# Tailwind CSS: 
+## Requirements:  Libraries and tools used
+# Tailwind CSS with vite: 
 A css framework mainly for designing and styling the front-end web pages.
 # react dom
 An entry point to work in React applications with the DOM (document object model).
@@ -49,24 +49,24 @@ Vite is a build tool used together with React, for optimised development and ser
 ## To get started
 1. On a local machine first clone the repository from GitHub: 
 2. Next point to the root directory 
-3. Then install dependencies using npm (Node Package Manager): git npm install ..
-4. Start the backend server: npm run dev
-5. Start the frontend: npm run dev
+3. Then install dependencies using npm (Node Package Manager): *git npm install ..*
+4. Start the backend server: *npm run dev*
+5. Start the frontend: *npm run dev*
 The website should then be accessible at http://localhost:5173
 
 ## To deploy
 1. Register to use render
-2. select build and deploy from github repository
+2. select *build and deploy from github repository*
 3. Connect your repositiory
-4. Enter Branch as main
-5. Runtime is node
-6. Build using npm run dev
-7. Enter start as  npm start
-8. Then add environmental variables for Mongodb, Vite and Firebase.
+4. Enter Branch as *main*
+5. Runtime is *node*
+6. Build using *npm run dev*
+7. Enter start as  *npm start*
+8. Then add environmental variables for *Mongodb, Vite and Firebase.*
 
 
 # Live demo
-Can be accessed at https://lola-estates.onrender.com
+- Can be accessed at https://lola-estates.onrender.com
 
 ## User journey
 The user journey details and frontend design details can be accessed from the design folder. 

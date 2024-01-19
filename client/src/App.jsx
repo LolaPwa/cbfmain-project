@@ -1,3 +1,8 @@
+//client side routing using react-router-dom. routes for different pages and nested routes for the 
+//private sections (createlisting, profile and update listing). The HEADER component is rendered across all pages.Features include
+//authentication, profile management and listing creation and update.
+
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
@@ -10,8 +15,8 @@ import CreateListing from './pages/CreateListing';
 import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
-
-export default function App() {
+// the App is the root component of the client-side using BrowserRouter to enable routing using the browser's history API
+export default function App() {// components to render for the element prop when route is matched
   return (
   <BrowserRouter>
    <Header />
