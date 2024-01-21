@@ -1,29 +1,33 @@
+//authentication functions for user registration, login and google auth
+
+
+
 import User from '../models/user.model.js';
 import bcryptjs from 'bcryptjs';
 import { errorHandler } from '../utils/error.js';
 import jwt from 'jsonwebtoken';
 
-export const signup= async (req,res,next) => {
+export const signup= async (req,res,next) => {// extract info from request body
     const{username, email, password} = req.body;
-    const hashedPassword = bcryptjs.hashSync(password,10);
-    const newUser=new User({username, email, password:hashedPassword});
+    const hashedPassword = bcryptjs.hashSync(password,10);// hash password
+    const newUser=new User({username, email, password:hashedPassword});// create new user
     try {
-        await newUser.save();
+        await newUser.save();// save 
         res.status(201).json("User created successfully");
 } catch(error) {
     next(error);
 }
 };
 
-export const signin = async(req,res,next)=> {
+export const signin = async(req,res,next)=> {// extract email/pswd from request body
     const {email, password} =req.body;
     try {
-        const validUser =  await User.findOne({email});
+        const validUser =  await User.findOne({email});// search for email
         if (!validUser) return next(errorHandler(404, 'User not found!'));
-        const validPassword = bcryptjs.compareSync(password, validUser.password);
+        const validPassword = bcryptjs.compareSync(password, validUser.password);// compare
         if (!validPassword) return next(errorHandler(401, 'Wrong credentials'));
         const token =jwt.sign({id: validUser._id}, process.env.JWT_SECRET);
-        const {password: pass, ...rest} =validUser._doc;
+        const {password: pass, ...rest} =validUser._doc;//if valid  generate token
         res.cookie('access_token', token, {httpOnly: true})
         .status(200)
         .json(rest);
@@ -35,15 +39,15 @@ export const signin = async(req,res,next)=> {
 
 export const google = async(req, res, next) =>{
     try{
-        const user = await User.findOne({email: req.body.email});
-            if(user) {
+        const user = await User.findOne({email: req.body.email});// search for user
+            if(user) {// if exist
                 const token = jwt.sign({id: user._id}, process.env.JWT_SECRET);
-                const {password: pass, ...rest}= user._doc;
+                const {password: pass, ...rest}= user._doc;// generate token set access-token cookie
                 res
                 .cookie('access_token', token, {httpOnly: true})
                 .status(200)
                 .json(rest);
-            } else {
+            } else {// if not exist generate random password, hash it, create new user with email,swd and avatar
                 const generatedPassword = 
                 Math.random().toString(36).slice(-8) +
                 Math.random().toString(36).slice(-8);
@@ -56,7 +60,7 @@ export const google = async(req, res, next) =>{
                 password: hashedPassword,
                 avatar: req.body.photo,
             });
-            await newUser.save();
+            await newUser.save();// save user to db, generate JWT token, set access-token cookie.
             const token = jwt.sign({id: newUser._id}, process.env.JWT_SECRET);
             const {password: pass,  ...rest} = newUser._doc;
             res

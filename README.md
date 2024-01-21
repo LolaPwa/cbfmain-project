@@ -52,7 +52,7 @@ Vite is a build tool used together with React, for optimised development and ser
 3. Then install dependencies using npm (Node Package Manager): *git npm install ..*
 4. Start the backend server: *npm run dev*
 5. Start the frontend: *npm run dev*
-The website should then be accessible at http://localhost:5173
+6. The website should then be accessible at *http://localhost:5173*
 
 ## To deploy
 1. Register to use render
@@ -64,15 +64,18 @@ The website should then be accessible at http://localhost:5173
 7. Enter start as  *npm start*
 8. Then add environmental variables for *Mongodb, Vite and Firebase.*
 
-
 # Live demo
 - Can be accessed at https://lola-estates.onrender.com
 
 ## User journey
-The user journey details and frontend design details can be accessed from the design folder. 
+- The user journey details and frontend design details can be accessed from the design folder. 
+## Feedback
+- Feedback responses are in the feedback folder.
+
 ## Github location 
 1. Created using repository https://github.com/LolaPwa/mern-estatecbfxxx
 2. Project was then moved to https://github.com/LolaPwa/cbfmain-project
+
 ## Resources referenced
 1. https://www.tutorialspoint.com/full-stack-mern-real-estate-app-a-modern-mern-marketplace/index.asp
 
