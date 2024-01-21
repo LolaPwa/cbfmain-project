@@ -15,7 +15,8 @@ The app provides the following functionalities:
 - To log in using google authentication
 - To sign in and sign up and sign out from an account
 
-## Requirements:  Libraries and tools used
+## REQUIREMENTS:  Libraries and tools used
+
 # Tailwind CSS with vite: 
 A css framework mainly for designing and styling the front-end web pages.
 # react dom
@@ -30,7 +31,6 @@ Is a carousel library for showcasing images in an engaging way.
 # React + Vite
 Vite is a build tool used together with React, for optimised development and server performance; ensuring instant hot module replacement (HMR). Hot module replacement ensures that when React components or other modules, the changes are reflected instantly in the browser, without needing a full page reload.
 
-## Other implementations
 # JSON Web Tokens (JWT)
 - Used to implement email and password authentication for secure user access, including secure account deletion using JWT cookie validation.
 # GoogleAuth (Firebase)
